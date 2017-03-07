@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title>DT | NYC | Central Park</title>
+			<link rel="stylesheet" href="css/style.css" type="text/css"/>
+			<script language="javascript" type="text/javascript"></script>
+	</head>
+
+	<body>
+<div id="curtain">
+	<div id="in_curtain">
+		<script>
+			function dark() {
+   				document.getElementById("curtain").style.backgroundColor= "rgba(0,0,0,0.85)";
+   				document.getElementById("place").style.color= "white";
+			}
+		</script>
+		<button id="button1" type="button" onclick="dark()">lights Off</button>
+		<script>
+			function light() {
+   				document.getElementById("curtain").style.backgroundColor= "rgba(0,0,0,0)"; 
+   				document.getElementById("place").style.color= "black";
+			}
+		</script>
+		<button id="button2" type="button" onclick="light(0)">lights On</button>
+	</div>
+</div>
+<div id="body">	
+	<header>
+		<div id="header">
+			<div id="logo">
+				<img src="img/logoBN_06.png">
+			</div>
+			<nav>
+				<div id="navbar_main">
+					<ul>
+						<li><a href="index.html"class="headerlink">HOME</a></li>
+						<li><a href="all_rutes.html" class="headerlink">ALL ROUTES</a></li>
+						<li><a href="contact.html"class="headerlink">CONTACT</a></li>
+						<li><a href="other_trips.html"class="headerlink" id="last_hl">OTHER TRIPS</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div id="header_bckgrnd"></div>
+	</header>
+			<section>
+				<article class="street_view">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2ses!4v1432899298669!6m8!1m7!1sdLzuPA1ReqRNVUDHBr4YdA!2m2!1d40.775014!2d-73.970352!3f256.69016600609126!4f-2.716915868010915!5f0.7820865974627469" width="1024" height="450" frameborder="0" style="border:0"></iframe>
+				</article>
+				<article>
+				<div id="place">
+					CENTRAL PARK
+				</div>
+				</article>
+			</section>
+</div>
+		<footer>
+				<div id="in_footer">
+					<br>
+					nyc@domestictrips.com | c/ Canuda 40 08002 Barcelona | 0034 934 120 776
+					<br>
+				</div>
+		</footer>
+	</body>
+</html>
