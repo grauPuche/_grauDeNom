@@ -48,6 +48,7 @@ table {
 
 title{content: Grau de nom}
 
+/*
 @font-face{
 	font-family:calson_it;
 	src: url(font/calson/calson_italic.otf) format('opentype');
@@ -61,7 +62,7 @@ title{content: Grau de nom}
 @font-face{
 	font-family:calson_itbold;
 	src: url(font/calson/calson_bold_italic.otf) format('opentype');
-}
+}*/
 
 @font-face{
 	font-family:tungsten_black;
@@ -78,10 +79,10 @@ title{content: Grau de nom}
 	src: url(font/tungsten/tungsten_semi.otf) format('opentype');
 }
 
+
 a{
-	font-family: calson_it;
-	color: #000000;
 	text-decoration: none;
+	color: #000000;
 }
 
 html{
@@ -92,8 +93,10 @@ body{
 	height: 100%;
 	background-color:#ffffff;
 	color: #000000;
-	font-family:calson_it;
-	font-size:15px;
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	font-size:12px;
+	line-height: 15px;
 }
 
 .section{
@@ -156,32 +159,17 @@ article{
 	margin-right: 10px;
 }
 
-.categories1{
+.categories{
 	float: left;
 	margin-left: 10px;
 	margin-top: 25px;
 	width: 135px;
 }
 
-.categories2{
-	float: left;
-	margin-left: 10px;
-	margin-top: 25px;
-	width: 115px;
-}
-
-.categories3{
-	float: left;
-	margin-left: 10px;
-	margin-top: 25px;
-	width: 135px;
-}
-
-.categories4{
-	float: left;
-	margin-left: 10px;
-	margin-top: 25px;
-	width: 135px;
+a.category{
+	font-family: 'Playfair Display';
+	font-style: italic;
+	color: #000000;
 }
 
 .soc{
@@ -195,6 +183,7 @@ article{
 #contact_a{
 	font-family: tungsten_book;
 	float: left;
+	font-size: 15px;
 	margin-left: 75px;
 	margin-top: 41px;
 }
@@ -248,7 +237,7 @@ a .socicon2{
 }
 
 #home_a:hover:before{
-	content:"//home";
+	content:"// home";
 }
 
 #pcomp_a:before{
@@ -256,7 +245,7 @@ a .socicon2{
 }
 
 #pcomp_a:hover:before{
-	content:"//physical computing";
+	content:"// physical computing";
 }
 
 #apps_a:before{
@@ -264,7 +253,7 @@ a .socicon2{
 }
 
 #apps_a:hover:before{
-	content:"//applications";
+	content:"// applications";
 }
 
 #icm_a:before{
@@ -272,7 +261,7 @@ a .socicon2{
 }
 
 #icm_a:hover:before{
-	content:"//ICM";
+	content:"// ICM";
 }
 
 #soundnvid_a:before{
@@ -280,7 +269,7 @@ a .socicon2{
 }
 
 #soundnvid_a:hover:before{
-	content:"//sound & video";
+	content:"// sound & video";
 }
 
 #contact_a:before{
@@ -288,7 +277,7 @@ a .socicon2{
 }
 
 #contact_a:hover:before{
-	content:"//CONTACT";
+	content:"// CONTACT";
 }
 
 #altdocs_a:before{
@@ -296,7 +285,7 @@ a .socicon2{
 }
 
 #altdocs_a:hover:before{
-	content:"//alt docs";
+	content:"// alt docs";
 }
 
 #altdocs_a:before{
@@ -304,7 +293,7 @@ a .socicon2{
 }
 
 #towers_a:hover:before{
-	content:"//towers of power";
+	content:"// towers of power";
 }
 
 #towers_a:before{
@@ -312,7 +301,7 @@ a .socicon2{
 }
 
 #basicanalog_a:hover:before{
-	content:"//analog circuits";
+	content:"// analog circuits";
 }
 
 #basicanalog_a:before{
@@ -320,7 +309,7 @@ a .socicon2{
 }
 
 #naturecode_a:hover:before{
-	content:"//nature of code";
+	content:"// nature of code";
 }
 
 #naturecode_a:before{
@@ -328,7 +317,7 @@ a .socicon2{
 }
 
 #netmedia_a:hover:before{
-	content:"//net media";
+	content:"// net media";
 }
 
 #netmedia_a:before{
@@ -340,7 +329,7 @@ a .socicon2{
 }
 
 #piecingit_a:hover:before{
-	content:"//piecing it";
+	content:"// piecing it";
 }
 
 #bluetooth_a:before{
@@ -348,14 +337,14 @@ a .socicon2{
 }
 
 #bluetooth_a:hover:before{
-	content:"//bluetooth LE";
+	content:"// bluetooth LE";
 }
 
 #none01{
 	height: 90px;
 }
 
-.signature,{
+.signature{
 
 }
 
@@ -429,14 +418,14 @@ a .th_box_in1{
 	width: 1024px;
 	margin: auto;
 	margin-bottom: 0; 
-	margin-top; 0;
+	margin-top: 0;
 }
 
 .proj_img512{
 	width: 512px;
 	margin: auto;
 	margin-bottom: 0; 
-	margin-top; 0;
+	margin-top: 0;
 }
 
 .blog_title512{
@@ -445,7 +434,7 @@ a .th_box_in1{
 	width: 512px;
 	margin: auto;
 	margin-bottom: 0; 
-	margin-top; 0;
+	margin-top: 0;
 }
 
 .blog_text512{
@@ -453,14 +442,14 @@ a .th_box_in1{
 	width: 512px;
 	margin: auto;
 	margin-bottom: 0; 
-	margin-top; 0;
+	margin-top: 0;
 }
 
 .proj_img582{
 	width: 582px;
 	margin: auto;
 	margin-bottom: 0; 
-	margin-top; 0;
+	margin-top: 0;
 }
 
 .proj_img256{

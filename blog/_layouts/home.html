@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+{% include head.html %}
+
+<body>
+	<div id="wrapper">
+		{% include header.html %}
+		<div class="section">
+			{{content}}
+		{% for post in site.posts %}
+			<article>
+				<a href="{{ post.url }}">
+					<div class="thumnail512">
+						<div class="th_box512">
+							<div class="th_box_in">
+								<div class="th_box_in1">{{ post.title }}</div>
+								<div class="th_box_in2">{{ post.catergory }}</div>
+							</div>
+						</div>
+						<img src="img/thumnailsBlog/{{ post.number }}_0.png">
+					</div>
+				</a>
+			</article>
+		{% endfor %}
+		</div>
+		</p>
+		{% include footer.html %}
+	</div>
+</body>
+
+</html>
