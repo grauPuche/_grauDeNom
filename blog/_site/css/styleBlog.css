@@ -1,4 +1,4 @@
-/*---RESET FILE---*/
+/*----------------------RESET FILE---*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,7 +17,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -44,25 +43,11 @@ table {
 	border-spacing: 0;
 }
 
-/*--- main style ---*/
+/*----------------------main style -------------------------*/
 
 title{content: Grau de nom}
 
-/*
-@font-face{
-	font-family:calson_it;
-	src: url(font/calson/calson_italic.otf) format('opentype');
-}
-
-@font-face{
-	font-family:calson_reg;
-	src: url(font/calson/calson_regular.otf) format('opentype');
-}
- 
-@font-face{
-	font-family:calson_itbold;
-	src: url(font/calson/calson_bold_italic.otf) format('opentype');
-}*/
+/*FONTS*/
 
 @font-face{
 	font-family:tungsten_black;
@@ -79,11 +64,7 @@ title{content: Grau de nom}
 	src: url(font/tungsten/tungsten_semi.otf) format('opentype');
 }
 
-
-a{
-	text-decoration: none;
-	color: #000000;
-}
+/*----------------------MAIN "BODY" DIVS----------------------*/
 
 html{
 	height: 100%;
@@ -92,12 +73,12 @@ html{
 body{
 	height: 100%;
 	background-color:#ffffff;
-	color: #000000;
+    position:relative;
+    top:-25px;
 	font-family: 'Playfair Display';
-	font-weight: 400;
-	font-size:12px;
-	line-height: 15px;
-}
+    font-size: 10pt;
+    line-height: 120%;
+    }
 
 .section{
 	float: right;
@@ -107,6 +88,9 @@ body{
 	margin: auto;
 	padding-top: 95px;
 }
+
+/*----------------------HEADER DIVS----------------------*/
+
 .section_contact{
 	width: 1024px;
 	min-height: 100%;
@@ -114,11 +98,13 @@ body{
 	margin: auto;
 	padding-top: 200px;
 }
+
 header{
 	width: 100%;
 }
 
 #header{
+    margin: 0px;
 	width: 1024px;
 	margin: auto;
 	margin-top: 0px;
@@ -164,12 +150,9 @@ article{
 	margin-left: 10px;
 	margin-top: 25px;
 	width: 135px;
-}
-
-a.category{
-	font-family: 'Playfair Display';
-	font-style: italic;
-	color: #000000;
+    font-style: italic;
+    font-size: 10pt;
+    line-height: 120%;
 }
 
 .soc{
@@ -187,35 +170,6 @@ a.category{
 	margin-left: 75px;
 	margin-top: 41px;
 }
-#contact_{
-	font-family: tungsten_book;
-	float: left;
-	margin-left: 75px;
-	margin-top: 41px;
-}
-
-.contact_text{
-	font-family: calson_regular;
-	text-align: center;
-}
-
-#contact_art{
-	text-align: center;
-	float: none;
-}
-
-#mail{
-	font-family: tungsten_black;
-	font-size: 40px;
-
-}
-
-a #mail{
-	font-family: tungsten_black;
-	font-size: 40px;
-
-}
-
 
 a .socicon1{
 	width: 15px;
@@ -229,124 +183,16 @@ a .socicon2{
 #socicons{
 	position: absolute;
 	bottom: 15px;
-
 }
 
-#home_a:before{
-	content:"home";
-}
-
-#home_a:hover:before{
-	content:"// home";
-}
-
-#pcomp_a:before{
-	content:"physical computing";
-}
-
-#pcomp_a:hover:before{
-	content:"// physical computing";
-}
-
-#apps_a:before{
-	content:"applications";
-}
-
-#apps_a:hover:before{
-	content:"// applications";
-}
-
-#icm_a:before{
-	content:"ICM";
-}
-
-#icm_a:hover:before{
-	content:"// ICM";
-}
-
-#soundnvid_a:before{
-	content:"sound & video";
-}
-
-#soundnvid_a:hover:before{
-	content:"// sound & video";
-}
-
-#contact_a:before{
-	content:"CONTACT";
-}
-
-#contact_a:hover:before{
-	content:"// CONTACT";
-}
-
-#altdocs_a:before{
-	content:"alt docs";
-}
-
-#altdocs_a:hover:before{
-	content:"// alt docs";
-}
-
-#altdocs_a:before{
-	content:"alt docs";
-}
-
-#towers_a:hover:before{
-	content:"// towers of power";
-}
-
-#towers_a:before{
-	content:"towers of power";
-}
-
-#basicanalog_a:hover:before{
-	content:"// analog circuits";
-}
-
-#basicanalog_a:before{
-	content:"analog circuits";
-}
-
-#naturecode_a:hover:before{
-	content:"// nature of code";
-}
-
-#naturecode_a:before{
-	content:"nature of code";
-}
-
-#netmedia_a:hover:before{
-	content:"// net media";
-}
-
-#netmedia_a:before{
-	content:"net media";
-}
-
-#piecingit_a:before{
-	content:"piecing it";
-}
-
-#piecingit_a:hover:before{
-	content:"// piecing it";
-}
-
-#bluetooth_a:before{
-	content:"bluetooth LE";
-}
-
-#bluetooth_a:hover:before{
-	content:"// bluetooth LE";
-}
+#contact_a:before{content:"CONTACT";}
+#contact_a:hover:before{content:"// CONTACT";}
 
 #none01{
 	height: 90px;
 }
 
-.signature{
-
-}
+/*----------------------THUMNAILS----------------------*/
 
 .thumnail256{
 	height: 256px;
@@ -359,7 +205,6 @@ a .socicon2{
 	width: 512px;
 	overflow: hidden;
 }
-
 
 .th_box256{
 	color: #ffffff;
@@ -414,23 +259,32 @@ a .th_box_in1{
 	width: 300px;
 }
 
-.proj_img1024{
-	width: 1024px;
-	margin: auto;
-	margin-bottom: 0; 
-	margin-top: 0;
+ /*----------------------BLOG----------------------*/ 
+
+.blog_sidetext224{
+	font-size: 8pt;
+	line-height: 120%;
+	width: 224px;
+	position: absolute;
+	margin-left: 4px;
+    font-style: italic;
 }
 
-.proj_img512{
-	width: 512px;
-	margin: auto;
-	margin-bottom: 0; 
-	margin-top: 0;
+.proj_date{
+	font-size: 10pt;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.proj_line{
+	position: absolute;
+	left: -3px;
+    z-index: -200;
 }
 
 .blog_title512{
 	font-family: tungsten_semi;
-	font-size: 35px;
+	font-size: 35pt;
 	width: 512px;
 	margin: auto;
 	margin-bottom: 0; 
@@ -438,106 +292,62 @@ a .th_box_in1{
 }
 
 .blog_text512{
-	font-family: calson_regular;
 	width: 512px;
 	margin: auto;
 	margin-bottom: 0; 
 	margin-top: 0;
 }
 
-.proj_img582{
-	width: 582px;
-	margin: auto;
-	margin-bottom: 0; 
-	margin-top: 0;
+
+
+
+/*----------------------FOOTER----------------------*/
+
+.signature{
+margin: 0;/*wrote that so vs code stops bothering me*/
 }
 
-.proj_img256{
-	width: 256px;
-	float: left;
-	margin: auto;
+/*----------------------TEXT----------------------*/
+
+a{
+	text-decoration: none;
+	color: #545454;
 }
 
-.proj_img256_nofloat{
-	width: 256px;
-	margin: auto;
+p{
+    margin-bottom: 24px;
 }
 
-.proj_img768{
-	width: 768px;
-	margin: 0 auto;
+/*----------------------MARKDOWN----------------------*/
+
+
+h1{
+    font-family: tungsten_semi;
+    font-size: 25pt;
+    margin-bottom: 16px;
+    font-style: inherit;
 }
 
-.proj_img384{
-	width: 384px;
-	float: left;
-	margin: auto;
+h2{
+    font-family: tungsten_semi;
+    font-size: 15pt;
+    margin-bottom: 16px;
+    font-style: inherit;
 }
 
-.proj_img{
-	margin: auto;
+h3{
+    font-family: tungsten_book;
+    font-size: 14pt;
+    margin-bottom: 16px;
+    font-style: inherit;
 }
 
-.blog_sidetext224{
-	font-size: 14px;
-	line-height: 120%;
-	font-family:calson_reg;
-	width: 224px;
-	position: absolute;
-	margin-left: 4px;
-}
+ul {
+    list-style-position:inside;
+    list-style-type: circle;
+    margin-bottom:16px;
+    }
 
-.proj_video{
-	width: 768px;
-
-	float: right;
-}
-
-.proj_line{
-	position: absolute;
-	left: -3px;
-}
-
-.proj_date{
-	font-size: 13px;
-	font-family: calson_itbold;
-}
-
-.blog_video{
-	position: relative;
-    height: 288px;
-    width: 512px;
-    background: url("videoframe.png") center center no-repeat;
-    background-size: contain;
-}
-
-.blog_captionimg{
-	font-family: tungsten_book;
-	/*background-color: green;*/
-	font-size: 15px;
-	width: 382px;
-	margin: auto;
-}
-
-.blog_captiontext{
-	font-family: calson_itbold;
-	/*background-color: green;*/
-	font-size: 20px;
-	text-align: center;
-	margin: auto;
-}
-
-.blog_captionvideo{
-	font-family: tungsten_book;
-	/*background-color: green;*/
-	font-size: 15px;
-	width: 458px;
-	margin: auto;
-}
-
-.blog_video_in  {
-    width: 458px;
-    height: 258px;
-    padding-top: 15px;
-    padding-left: 27px;
+ol {
+    list-style: decimal;
 }

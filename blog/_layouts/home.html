@@ -10,15 +10,15 @@
 			{{content}}
 		{% for post in site.posts %}
 			<article>
-				<a href="{{ post.url }}">
+				<a href="{{ post.url | relative_url }}">
 					<div class="thumnail512">
 						<div class="th_box512">
 							<div class="th_box_in">
 								<div class="th_box_in1">{{ post.title }}</div>
-								<div class="th_box_in2">{{ post.catergory }}</div>
+								<div class="th_box_in2">{{ post.category }}</div>
 							</div>
 						</div>
-						<img src="img/thumnailsBlog/{{ post.number }}_0.png">
+						<img src="{{ 'img/thumnailsBlog/' | relative_url }}{{ post.number }}_0.png">
 					</div>
 				</a>
 			</article>
