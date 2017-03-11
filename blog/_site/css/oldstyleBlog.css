@@ -1,52 +1,4 @@
-/*---RESET FILE---*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*--- main style ---*/
-
-title{content: Grau de nom}
 
 /*
 @font-face{
@@ -64,107 +16,16 @@ title{content: Grau de nom}
 	src: url(font/calson/calson_bold_italic.otf) format('opentype');
 }*/
 
-@font-face{
-	font-family:tungsten_black;
-	src: url(font/tungsten/tungsten_black.otf) format('opentype');
-}
-
-@font-face{
-	font-family:tungsten_book;
-	src: url(font/tungsten/tungsten_book.otf) format('opentype');
-}
-
-@font-face{
-	font-family:tungsten_semi;
-	src: url(font/tungsten/tungsten_semi.otf) format('opentype');
-}
 
 
-a{
-	text-decoration: none;
-	color: #000000;
-}
 
-html{
-	height: 100%;
-}
 
-body{
-	height: 100%;
-	background-color:#ffffff;
-	color: #000000;
-	font-family: 'Playfair Display';
-	font-weight: 400;
-	font-size:12px;
-	line-height: 15px;
-}
 
-.section{
-	float: right;
-	width: 1024px;
-	min-height: 100%;
-	position: relative;
-	margin: auto;
-	padding-top: 95px;
-}
-.section_contact{
-	width: 1024px;
-	min-height: 100%;
-	position: relative;
-	margin: auto;
-	padding-top: 200px;
-}
-header{
-	width: 100%;
-}
 
-#header{
-	width: 1024px;
-	margin: auto;
-	margin-top: 0px;
-}
 
-article{
-	float: left
-}
 
-#wrapper {
-	width: 1024px;
-    min-height: 100%;
-    height: auto;
-    height: 100%;
-    position: relative;
-    margin: 0 auto;
 
-}
 
-#top_bar{
-	background-color: #ffffff;
-	height: 85px;
-	width: 1024px;
-	position: fixed;
-	z-index: 200;
-}
-
-#main_title{
-	float: left;
-	font-family:tungsten_black;
-	font-size: 80px;
-	margin-top: 4px;
-	margin-right: 10px;
-}
-
-#main_title_img{
-	float: left;
-	margin-right: 10px;
-}
-
-.categories{
-	float: left;
-	margin-left: 10px;
-	margin-top: 25px;
-	width: 135px;
-}
 
 a.category{
 	font-family: 'Playfair Display';
@@ -172,21 +33,9 @@ a.category{
 	color: #000000;
 }
 
-.soc{
-	width: 15px;
-	height: 45px;
-	float: right;
-	margin-left: 10px;
-	margin-top: 25px;
-}	
 
-#contact_a{
-	font-family: tungsten_book;
-	float: left;
-	font-size: 15px;
-	margin-left: 75px;
-	margin-top: 41px;
-}
+
+
 #contact_{
 	font-family: tungsten_book;
 	float: left;
@@ -217,202 +66,18 @@ a #mail{
 }
 
 
-a .socicon1{
-	width: 15px;
-	height: 15px;
-}
-a .socicon2{
-	width: 15px;
-	height: 15px;
-}
-
-#socicons{
-	position: absolute;
-	bottom: 15px;
-
-}
-
-#home_a:before{
-	content:"home";
-}
-
-#home_a:hover:before{
-	content:"// home";
-}
-
-#pcomp_a:before{
-	content:"physical computing";
-}
-
-#pcomp_a:hover:before{
-	content:"// physical computing";
-}
-
-#apps_a:before{
-	content:"applications";
-}
-
-#apps_a:hover:before{
-	content:"// applications";
-}
-
-#icm_a:before{
-	content:"ICM";
-}
-
-#icm_a:hover:before{
-	content:"// ICM";
-}
-
-#soundnvid_a:before{
-	content:"sound & video";
-}
-
-#soundnvid_a:hover:before{
-	content:"// sound & video";
-}
-
-#contact_a:before{
-	content:"CONTACT";
-}
-
-#contact_a:hover:before{
-	content:"// CONTACT";
-}
-
-#altdocs_a:before{
-	content:"alt docs";
-}
-
-#altdocs_a:hover:before{
-	content:"// alt docs";
-}
-
-#altdocs_a:before{
-	content:"alt docs";
-}
-
-#towers_a:hover:before{
-	content:"// towers of power";
-}
-
-#towers_a:before{
-	content:"towers of power";
-}
-
-#basicanalog_a:hover:before{
-	content:"// analog circuits";
-}
-
-#basicanalog_a:before{
-	content:"analog circuits";
-}
-
-#naturecode_a:hover:before{
-	content:"// nature of code";
-}
-
-#naturecode_a:before{
-	content:"nature of code";
-}
-
-#netmedia_a:hover:before{
-	content:"// net media";
-}
-
-#netmedia_a:before{
-	content:"net media";
-}
-
-#piecingit_a:before{
-	content:"piecing it";
-}
-
-#piecingit_a:hover:before{
-	content:"// piecing it";
-}
-
-#bluetooth_a:before{
-	content:"bluetooth LE";
-}
-
-#bluetooth_a:hover:before{
-	content:"// bluetooth LE";
-}
-
-#none01{
-	height: 90px;
-}
-
-.signature{
-
-}
-
-.thumnail256{
-	height: 256px;
-	width: 256px;
-	overflow: hidden;
-}
-
-.thumnail512{
-	height: 256px;
-	width: 512px;
-	overflow: hidden;
-}
 
 
-.th_box256{
-	color: #ffffff;
-	background-color: rgba(65,0,0,0.75);
-	height: 256px;
-	width: 256px;
-	position: absolute;
-	opacity: 0;
-	transition:opacity 0.5s;
-}
 
-.th_box256_empty{
-	background-color: #ffffff;
-	height: 256px;
-	width: 256px;
-	position: absolute;
-}
 
-.th_box512{
-	color: #ffffff;
-	background-color: rgba(65,0,0,0.75);
-	height: 256px;
-	width: 512px;
-	position: absolute;
-	opacity: 0;
-	transition:opacity 0.5s;
-}
 
-.th_box512:hover,.th_box256:hover{
-	opacity: 1;
-}
 
-.th_box_in{
-	position: absolute;
-	top: 50px;
-	left: 50px;
-}
 
-a .th_box_in1{
-	color: #ffffff;
-}
 
-.th_box_in1{
-	font-size: 20px;
-	font-family: tungsten_book;
-	width: 280px;
-}
 
-.th_box_in2{
-	position: absolute;
-	left: 10px;
-	width: 300px;
-}
+
+
+
 
 .proj_img1024{
 	width: 1024px;
@@ -428,22 +93,9 @@ a .th_box_in1{
 	margin-top: 0;
 }
 
-.blog_title512{
-	font-family: tungsten_semi;
-	font-size: 35px;
-	width: 512px;
-	margin: auto;
-	margin-bottom: 0; 
-	margin-top: 0;
-}
 
-.blog_text512{
-	font-family: calson_regular;
-	width: 512px;
-	margin: auto;
-	margin-bottom: 0; 
-	margin-top: 0;
-}
+
+
 
 .proj_img582{
 	width: 582px;
@@ -478,14 +130,7 @@ a .th_box_in1{
 	margin: auto;
 }
 
-.blog_sidetext224{
-	font-size: 14px;
-	line-height: 120%;
-	font-family:calson_reg;
-	width: 224px;
-	position: absolute;
-	margin-left: 4px;
-}
+
 
 .proj_video{
 	width: 768px;
@@ -493,15 +138,8 @@ a .th_box_in1{
 	float: right;
 }
 
-.proj_line{
-	position: absolute;
-	left: -3px;
-}
 
-.proj_date{
-	font-size: 13px;
-	font-family: calson_itbold;
-}
+
 
 .blog_video{
 	position: relative;

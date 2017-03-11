@@ -163,19 +163,20 @@ article{
 	margin-top: 25px;
 }	
 
-#contact_a{
+#about{
 	font-family: tungsten_book;
 	float: left;
 	font-size: 15px;
 	margin-left: 75px;
 	margin-top: 41px;
+    color: #000000;
 }
 
-a .socicon1{
+a.socicon1{
 	width: 15px;
 	height: 15px;
 }
-a .socicon2{
+a.socicon2{
 	width: 15px;
 	height: 15px;
 }
@@ -190,6 +191,11 @@ a .socicon2{
 
 #none01{
 	height: 90px;
+}
+
+a.category{
+    color: #000000;
+    text-decoration: none;
 }
 
 /*----------------------THUMNAILS----------------------*/
@@ -243,7 +249,7 @@ a .socicon2{
 	left: 50px;
 }
 
-a .th_box_in1{
+a.th_box_in1{
 	color: #ffffff;
 }
 
@@ -310,12 +316,13 @@ margin: 0;/*wrote that so vs code stops bothering me*/
 /*----------------------TEXT----------------------*/
 
 a{
-	text-decoration: none;
-	color: #545454;
+	text-decoration: underline;
+    color: #000000;
 }
 
 p{
-    margin-bottom: 24px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 /*----------------------MARKDOWN----------------------*/
@@ -324,22 +331,29 @@ p{
 h1{
     font-family: tungsten_semi;
     font-size: 25pt;
-    margin-bottom: 16px;
     font-style: inherit;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 25px;
 }
 
 h2{
     font-family: tungsten_semi;
     font-size: 15pt;
-    margin-bottom: 16px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     font-style: inherit;
+    margin-left:50px;
+
 }
 
 h3{
     font-family: tungsten_book;
     font-size: 14pt;
-    margin-bottom: 16px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-style: inherit;
+    margin-left: 75px;
 }
 
 ul {
@@ -350,4 +364,27 @@ ul {
 
 ol {
     list-style: decimal;
+}
+
+code{
+    font-family: 'PT Mono';
+    color: #343434
+}
+
+td.gutter.gl{
+    padding-right: 20px;
+    color: #d3d3d3;
+}
+
+table{
+    margin-top: 15px;
+    margin-bottom: 20px; 
+}
+
+blockquote{
+    border-left: 3px solid #d3d3d3;
+    padding: 4px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
