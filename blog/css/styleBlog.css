@@ -73,8 +73,6 @@ html{
 body{
 	height: 100%;
 	background-color:#ffffff;
-    position:relative;
-    top:-25px;
 	font-family: 'Playfair Display';
     font-size: 10pt;
     line-height: 120%;
@@ -196,6 +194,7 @@ a.socicon2{
 a.category{
     color: #000000;
     text-decoration: none;
+    font-weight: 400;
 }
 
 /*----------------------THUMNAILS----------------------*/
@@ -210,6 +209,10 @@ a.category{
 	height: 256px;
 	width: 512px;
 	overflow: hidden;
+}
+
+a.th_box{
+    font-style: inherit;
 }
 
 .th_box256{
@@ -263,6 +266,8 @@ a.th_box_in1{
 	position: absolute;
 	left: 10px;
 	width: 300px;
+    font-style: italic;
+    font-weight: 400;
 }
 
  /*----------------------BLOG----------------------*/ 
@@ -309,6 +314,10 @@ a.th_box_in1{
 
 /*----------------------FOOTER----------------------*/
 
+#endName{
+    font-weight: 700;
+}
+
 .signature{
 margin: 0;/*wrote that so vs code stops bothering me*/
 }
@@ -316,8 +325,9 @@ margin: 0;/*wrote that so vs code stops bothering me*/
 /*----------------------TEXT----------------------*/
 
 a{
-	text-decoration: underline;
+	text-decoration: none;
     color: #000000;
+    font-weight: 700;
 }
 
 p{

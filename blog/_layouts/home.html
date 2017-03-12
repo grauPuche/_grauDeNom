@@ -10,7 +10,7 @@
 			{{content}}
 		{% for post in site.posts %}
 			<article>
-				<a href="{{ post.url | relative_url }}">
+				<a class="th_box" href="{{ post.url | relative_url }}">
 					<div class="thumnail512">
 						<div class="th_box512">
 							<div class="th_box_in">
@@ -24,7 +24,6 @@
 			</article>
 		{% endfor %}
 		</div>
-		</p>
 		{% include footer.html %}
 	</div>
 </body>

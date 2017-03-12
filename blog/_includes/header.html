@@ -1,14 +1,13 @@
 <header>
-			<p>
 				<div id="header">
 					<div id="top_bar">
-						<a href="index.html">
+						<a href="{{ site.url}}">
 							<div id="main_title">
 								<img src="{{ 'img/header/main_titleBlog.gif' | relative_url }}">
 							</div>
 						</a>
 						<div class="categories"id="cat1">
-							<a class="category" href="{{ '/home/' | relative_url }}">home</a><br>
+							<a class="category" href="{{ site.url}}">home</a><br>
 							<a class="category" href="{{ '/applications/' | relative_url }}">applications</a><br>
 							<a class="category" href="{{ '/physical computing/' | relative_url }}">physical computing</a><br>
 						</div>
