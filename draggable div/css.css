@@ -1,0 +1,16 @@
+
+
+#div1{
+	border: 5px solid red;
+	height: 512px;
+	width: 512px;
+	resize: both;
+    overflow: auto;
+   	box-shadow: 10px 10px 50px;
+}
+#div2{
+	background-color: red;
+	height: 35px;
+	width: 100%; 
+}
+
