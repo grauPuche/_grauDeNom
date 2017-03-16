@@ -4,6 +4,9 @@
 	 viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
+	.st1{fill:#800000;}
 </style>
-<circle id="XMLID_4_" class="st0" cx="12.5" cy="12.5" r="12.5"/>
+<path id="XMLID_60_" class="st0" d="M12.5,0C5.6,0,0,5.6,0,12.5S5.6,25,12.5,25S25,19.4,25,12.5S19.4,0,12.5,0z"/>
+<polygon id="XMLID_59_" class="st1" points="18.9,16 16,18.9 12.5,15.3 9,18.9 6.1,16 9.7,12.5 6.1,9 9,6.1 12.5,9.7 16,6.1 18.9,9 
+	15.3,12.5 "/>
 </svg>
