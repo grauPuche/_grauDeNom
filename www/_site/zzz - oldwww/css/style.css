@@ -1,0 +1,489 @@
+/*---RESET FILE---*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--- main style ---*/
+
+title{content: Grau de nom}
+
+@font-face{
+	font-family:calson_it;
+	src: url(font/calson/calson_italic.otf) format('opentype');
+}
+
+@font-face{
+	font-family:calson_reg;
+	src: url(font/calson/calson_regular.otf) format('opentype');
+}
+ 
+@font-face{
+	font-family:calson_itbold;
+	src: url(font/calson/calson_bold_italic.otf) format('opentype');
+}
+
+@font-face{
+	font-family:tungsten_black;
+	src: url(font/tungsten/tungsten_black.otf) format('opentype');
+}
+
+@font-face{
+	font-family:tungsten_book;
+	src: url(font/tungsten/tungsten_book.otf) format('opentype');
+}
+
+a{
+	font-family: calson_it;
+	color: #000000;
+	text-decoration: none;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	background-color:#ffffff;
+	color: #000000;
+	font-family:calson_it;
+	font-size:15px;
+}
+
+.section{
+	float: right;
+	width: 1024px;
+	min-height: 100%;
+	position: relative;
+	margin: auto;
+	padding-top: 95px;
+}
+.section_contact{
+	width: 1024px;
+	min-height: 100%;
+	position: relative;
+	margin: auto;
+	padding-top: 200px;
+}
+header{
+	width: 100%;
+}
+
+#header{
+	width: 1024px;
+	margin: auto;
+	margin-top: 0px;
+}
+
+article{
+	float: left
+}
+
+#wrapper {
+	width: 1024px;
+    min-height: 100%;
+    height: auto;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+#top_bar{
+	background-color: #ffffff;
+	height: 85px;
+	width: 1024px;
+	position: fixed;
+	z-index: 200;
+}
+
+#main_title{
+	float: left;
+	font-family:tungsten_black;
+	font-size: 80px;
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+#main_title_img{
+	float: left;
+	margin-right: 10px;
+}
+
+.categories1{
+	float: left;
+	margin-left: 10px;
+	margin-top: 25px;
+	width: 40px;
+}
+
+.categories2{
+	float: left;
+	margin-left: 10px;
+	margin-top: 25px;
+	width: 45px;
+}
+
+.categories3{
+	float: left;
+	margin-left: 10px;
+	margin-top: 25px;
+	width: 80px;
+}
+
+.categories4{
+	float: left;
+	margin-left: 10px;
+	margin-top: 25px;
+	width: 60px;
+}
+
+.soc{
+	width: 15px;
+	height: 45px;
+	float: right;
+	margin-left: 10px;
+	margin-top: 25px;
+}	
+
+#contact_a{
+	font-family: tungsten_book;
+	float: left;
+	margin-left: 375px;
+	margin-top: 41px;
+}
+#contact_{
+	font-family: tungsten_book;
+	float: left;
+	margin-left: 375px;
+	margin-top: 41px;
+}
+
+.contact_text{
+	font-family: calson_regular;
+	text-align: center;
+}
+
+#contact_art{
+	text-align: center;
+	float: none;
+}
+
+#mail{
+	font-family: tungsten_black;
+	font-size: 40px;
+
+}
+
+a #mail{
+	font-family: tungsten_black;
+	font-size: 40px;
+
+}
+
+
+a .socicon1{
+	width: 15px;
+	height: 15px;
+}
+a .socicon2{
+	width: 15px;
+	height: 15px;
+}
+
+#socicons{
+	position: absolute;
+	bottom: 15px;
+
+}
+
+#all_a:before{
+	content:"all";
+}
+
+#all_a:hover:before{
+	content:"//all";
+}
+
+#type_a:before{
+	content:"type";
+}
+
+#type_a:hover:before{
+	content:"//type";
+}
+
+#print_a:before{
+	content:"print";
+}
+
+#print_a:hover:before{
+	content:"//print";
+}
+
+#web_a:before{
+	content:"web";
+}
+
+#web_a:hover:before{
+	content:"//web";
+}
+
+#UI_a:before{
+	content:"UI";
+}
+
+#UI_a:hover:before{
+	content:"//UI";
+}
+
+#brand_a:before{
+	content:"brand";
+}
+
+#brand_a:hover:before{
+	content:"//brand";
+}
+
+#illustration_a:before{
+	content:"illustration";
+}
+
+#illustration_a:hover:before{
+	content:"//illustration";
+}
+
+#editorial_a:before{
+	content:"editorial";
+}
+
+#editorial_a:hover:before{
+	content:"//editorial";
+}
+
+#photography_a:before{
+	content:"photography";
+}
+
+#photography_a:hover:before{
+	content:"//photography";
+}
+
+#motion_a:before{
+	content:"motion";
+}
+
+#motion_a:hover:before{
+	content:"//motion";
+}
+
+#product_a:before{
+	content:"product";
+}
+
+#product_a:hover:before{
+	content:"//product";
+}
+
+#packaging_a:before{
+	content:"packaging";
+}
+
+#packaging_a:hover:before{
+	content:"//packaging";
+}
+
+#contact_a:before{
+	content:"CONTACT";
+}
+
+#contact_a:hover:before{
+	content:"//CONTACT";
+}
+
+#none01{
+	height: 90px;
+}
+
+.signature,{
+
+}
+
+.thumnail256{
+	height: 256px;
+	width: 256px;
+	overflow: hidden;
+}
+
+.thumnail512{
+	height: 256px;
+	width: 512px;
+	overflow: hidden;
+}
+
+
+.th_box256{
+	color: #ffffff;
+	background-color: rgba(65,0,0,0.75);
+	height: 256px;
+	width: 256px;
+	position: absolute;
+	opacity: 0;
+	transition:opacity 0.5s;
+}
+
+.th_box256_empty{
+	background-color: #ffffff;
+	height: 256px;
+	width: 256px;
+	position: absolute;
+}
+
+.th_box512{
+	color: #ffffff;
+	background-color: rgba(65,0,0,0.75);
+	height: 256px;
+	width: 512px;
+	position: absolute;
+	opacity: 0;
+	transition:opacity 0.5s;
+}
+
+.th_box512:hover,.th_box256:hover{
+	opacity: 1;
+}
+
+.th_box_in{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
+a .th_box_in1{
+	color: #ffffff;
+}
+
+.th_box_in1{
+	font-size: 20px;
+	font-family: tungsten_book;
+	width: 150px;
+}
+
+.th_box_in2{
+	position: absolute;
+	left: 10px;
+	width: 200px;
+}
+
+.proj_img1024{
+	width: 1024px;
+	margin: auto;
+	margin-bottom: 0; 
+	margin-top; 0;
+}
+
+.proj_img512{
+	width: 512px;
+	margin: auto;
+	margin-bottom: 0; 
+	margin-top; 0;
+}
+
+.proj_img582{
+	width: 582px;
+	margin: auto;
+	margin-bottom: 0; 
+	margin-top; 0;
+}
+
+.proj_img256{
+	width: 256px;
+	float: left;
+	margin: auto;
+}
+
+.proj_img256_nofloat{
+	width: 256px;
+	margin: auto;
+}
+
+.proj_img768{
+	width: 768px;
+	margin: 0 auto;
+}
+
+.proj_img384{
+	width: 384px;
+	float: left;
+	margin: auto;
+}
+
+.proj_img{
+	margin: auto;
+}
+
+.proj_sidetext224{
+	font-size: 14px;
+	line-height: 120%;
+	font-family:calson_reg;
+	width: 224px;
+	position: absolute;
+	margin-left: 4px;
+}
+
+.proj_video{
+	width: 768px;
+
+	float: right;
+}
+
+.proj_line{
+	position: absolute;
+	left: -3px;
+}
+
+.proj_date{
+	font-size: 13px;
+	font-family: calson_itbold;
+}

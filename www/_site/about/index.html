@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Grau de nom</title>
+	<style type="text/css"></style>
+	<base target="_blank">	
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+ 		$("document").ready(inici);
+
+ 		function inici(){
+ 			$(".category").mouseover(entrar);
+ 			$(".category").mouseout(sortir);
+			$(".about").mouseover(entrar);
+ 			$(".about").mouseout(sortir);
+ 		}
+
+ 		function entrar(){
+ 			a="//"+$(this).text();
+ 			$(this).text(a);
+
+ 		}
+ 		function sortir(){
+ 			a=$(this).text();
+ 			a2=a.substr(2,999)
+ 			$(this).text(a2);
+
+ 		}
+
+ 		</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+				<div id="header">
+					<div id="top_bar">
+						<a href="http://localhost:4000">
+							<div id="main_title">
+								<img src="/img/header/main_title.gif">
+							</div>
+						</a>
+						<div class="categories"id="cat1">
+							<a class="category" href="http://localhost:4000">home</a><br>
+							<a class="category" href="/tipography/">tipography</a><br>
+							<a class="category" href="/print/">print</a><br>
+						</div>
+						<div class="categories"id="cat5">
+							<a class="category" href="/web/">web</a><br>
+							<a class="category" href="/user%20experience/">user experience</a><br>
+							<a class="category" href="/branding/">branding</a>
+						</div>
+						<div class="categories"id="cat4">
+							<a class="category" href="/illustration/">illustration</a><br>
+							<a class="category" href="/editorial/">editorial</a><br>
+							<a class="category" href="/photography/">photography</a>
+						</div>
+						<div class="categories"id="cat4">
+							<a class="category" href="/motion%20graphics/">motion graphics</a><br>
+							<a class="category" href="/packaging/">packaging</a><br>
+							<a class="category" href="/product/">product</a>
+						</div>
+						<div class="soc">
+								<a class="socicon1" href="https://www.linkedin.com/in/grauPuche" target="_blank">
+									<img src="/img/socicon/socicon_linked.svg">
+								</a>
+								<a class="socicon1" href="https://instagram.com/grauPuche/" target="_blank">
+									<img src="/img/socicon/socicon_insta.svg">
+								</a>
+								<a class="socicon1" href="https://github.com/grauPuche" target="_blank">
+									<img src="/img/socicon/socicon_gith.svg">
+								</a>
+						</div>
+						<div id="about">
+							<a class="about" href="/about/">ABOUT</a><br>
+						</div>
+					</div>
+				</div>
+		</header>
+		<div class="section">
+			<div class="blog_title512" style="text-align: left; padding-left: 50px;">
+				Hi!
+			</div>
+			<div class="blog_text512">
+				<img src="/img/hi.gif" alt="'Sup'" style="position: relative; bottom:10px; margin-bottom: 20px; ">
+<br>
+<p>Hi! as you can see everywhere my name is <strong>grau</strong>, I’m a <em>design major</em> that is trying to figure out what to do with his live. To get to that point I’m using all the help I can get by being a master’s Candidate at NYU’s <a href="https://tisch.nyu.edu/itp">Interactive Telecommunications Program (ITP)</a>.</p>
+
+<p>I’m interested on the crossroad between <em>design and technology</em>. I got the design part covered and I’ve been diving into the engineering part of the deal. I use programing to apply it to web and physical projects using devices like <a href="https://arduino.cc">Arduino</a> and other microcontrollers. But my main focus is <em>web</em>, and learning how it works and what are it’s capabilities.</p>
+
+<p>This website serves as a <em>portfolio</em> of my favorite projects so far and as an image of what I’m capable of. If you are interested on knowing about my most recent work, you should visit my <a href="http://blog.graupuche.info">blog</a> were I am much more active and you can actually see what I am up to right know. This website takes a while to get updated so the projects shown are a bit older and do not represent what I’m really doing and have learned in the past months. And If you don’t have enough and really wanna know what I’m working on right at this exact moment take a look at my <a href="https://github.com/grauPuche">GitHub</a>.</p>
+
+<h2 id="tldr">TL;DR</h2>
+
+<ul>
+  <li>designer learning tech</li>
+  <li>web is my main focus</li>
+  <li>you should check out my <a href="http://blog.graupuche.info">blog</a></li>
+  <li>go down the rabbit hole an come and visit my <a href="https://github.com/grauPuche">GitHub</a>.</li>
+  <li>I really try to be active on <a href="https://www.instagram.com/grauPuche/">intagram</a></li>
+  <li>if for some reason you want my <a href="/assets/cv_Grau_Puche.pdf">CV</a> take it, I also have <a href="https://www.linkedin.com/in/grauPuche/">linkedIn</a>.</li>
+</ul>
+
+
+<p id="endName" style="color:white;">
+</p>
+<br><br><br><br>
+</div>
+		</div>
+		<div class="signature">
+			<img src="/img/socicon/icon_signature_NYC17.svg">
+		</div>
+	</div>
+</body>
+
+</html>

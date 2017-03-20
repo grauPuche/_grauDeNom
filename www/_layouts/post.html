@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+{% include head.html %}
+
+<body>
+	<div id="wrapper">
+		{% include header.html %}
+		<div class="section">
+			<div class="blog_sidetext224">
+				<br>
+				{{page.info}}
+				<br><br>
+				<div class="proj_date">{{page.city}} {{page.year}}</div>
+		
+				<img class="proj_line" src="{{ 'img/proj/proj_line.png' | relative_url }}">
+				<br>
+				<br>
+				<a class="category" href="{{'/'}}{{page.category1}}{{'/'| relative_url }}">{{page.category1}}</a><br>
+				<a class="category" href="{{'/'}}{{page.category1}}{{'/'| relative_url }}">{{page.category2}}</a><br>
+				<a class="category" href="{{'/'}}{{page.category1}}{{'/'| relative_url }}">{{page.category3}}</a><br>
+			</div>
+			<div class="blog_title512">
+				{{page.title}}
+			</div>
+			<div class="blog_text512">
+<br>
+{{content}}
+<p id="endName" style="color:white;">
+.
+</p>
+<br><br><br><br>
+</div>
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
+
+</html>

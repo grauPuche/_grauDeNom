@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Grau de nom</title>
+	<style type="text/css"></style>
+	<base target="_blank">	
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+ 		$("document").ready(inici);
+
+ 		function inici(){
+ 			$(".category").mouseover(entrar);
+ 			$(".category").mouseout(sortir);
+			$(".about").mouseover(entrar);
+ 			$(".about").mouseout(sortir);
+ 		}
+
+ 		function entrar(){
+ 			a="//"+$(this).text();
+ 			$(this).text(a);
+
+ 		}
+ 		function sortir(){
+ 			a=$(this).text();
+ 			a2=a.substr(2,999)
+ 			$(this).text(a2);
+
+ 		}
+
+ 		</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+				<div id="header">
+					<div id="top_bar">
+						<a href="http://localhost:4000">
+							<div id="main_title">
+								<img src="/img/header/main_title.gif">
+							</div>
+						</a>
+						<div class="categories"id="cat1">
+							<a class="category" href="http://localhost:4000">home</a><br>
+							<a class="category" href="/tipography/">tipography</a><br>
+							<a class="category" href="/print/">print</a><br>
+						</div>
+						<div class="categories"id="cat5">
+							<a class="category" href="/web/">web</a><br>
+							<a class="category" href="/user%20experience/">user experience</a><br>
+							<a class="category" href="/branding/">branding</a>
+						</div>
+						<div class="categories"id="cat4">
+							<a class="category" href="/illustration/">illustration</a><br>
+							<a class="category" href="/editorial/">editorial</a><br>
+							<a class="category" href="/photography/">photography</a>
+						</div>
+						<div class="categories"id="cat4">
+							<a class="category" href="/motion%20graphics/">motion graphics</a><br>
+							<a class="category" href="/packaging/">packaging</a><br>
+							<a class="category" href="/product/">product</a>
+						</div>
+						<div class="soc">
+								<a class="socicon1" href="https://www.linkedin.com/in/grauPuche" target="_blank">
+									<img src="/img/socicon/socicon_linked.svg">
+								</a>
+								<a class="socicon1" href="https://instagram.com/grauPuche/" target="_blank">
+									<img src="/img/socicon/socicon_insta.svg">
+								</a>
+								<a class="socicon1" href="https://github.com/grauPuche" target="_blank">
+									<img src="/img/socicon/socicon_gith.svg">
+								</a>
+						</div>
+						<div id="about">
+							<a class="about" href="/about/">ABOUT</a><br>
+						</div>
+					</div>
+				</div>
+		</header>
+		<div class="section">
+			
+
+		
+			<article>
+				<a class="th_box" href="/tokyo64/">
+					<div class="thumnail256 ">
+						<div class="th_box256">
+							<div class="th_box_in">
+								<div class="th_box_in1">Tokyo Olympics 1964</div>
+								<div class="th_box_in2">print · illustration · typography</div>
+							</div>
+						</div>
+						<img src="/img/thumnails/1.png">
+					</div>
+				</a>
+			</article>
+		
+		</div>
+		<div class="signature">
+			<img src="/img/socicon/icon_signature_NYC17.svg">
+		</div>
+	</div>
+</body>
+
+</html>

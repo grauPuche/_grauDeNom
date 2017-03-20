@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+{% include head.html %}
+
+<body>
+	<div id="wrapper">
+		{% include header.html %}
+		<div class="section">
+			{{content}}
+		{% for post in site.posts %}
+			<article>
+				<a class="th_box" href="{{ post.url | relative_url }}">
+					<div class="thumnail{{post.size}} ">
+						<div class="th_box{{post.size}}">
+							<div class="th_box_in">
+								<div class="th_box_in1">{{ post.title }}</div>
+								<div class="th_box_in2">{{ post.category1}} · {{ post.category2}} · {{ post.category3}}</div>
+							</div>
+						</div>
+						<img src="{{ 'img/thumnails/' | relative_url }}{{ post.number }}.{{ post.file }}">
+					</div>
+				</a>
+			</article>
+		{% endfor %}
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
+
+</html>
