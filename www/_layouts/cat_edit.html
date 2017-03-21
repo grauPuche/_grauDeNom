@@ -9,6 +9,7 @@
 		<div class="section">
 <div class="md"> 			<div class="md">{{content}}</div> </div>
 		{% for post in site.posts %}
+		{% if post.category1 contains 'editorial' %}
 			<article>
 				<a class="th_box" href="{{ post.url | relative_url }}">
 					<div class="thumnail{{post.size}} ">
@@ -22,6 +23,7 @@
 					</div>
 				</a>
 			</article>
+		{% endif %}
 		{% endfor %}
 		</div>
 		{% include footer.html %}
