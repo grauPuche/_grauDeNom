@@ -320,6 +320,19 @@ a.th_box_in1{
 	margin-top: 0;
 }
 
+.pro_img{
+	width: 1024px;
+	margin: auto;
+	margin-bottom: 0; 
+	margin-top: 0;
+	text-align: center;
+}
+
+.md img{
+	text-align: center;
+}
+
+
 /*----------------------FOOTER----------------------*/
 
 #endName{

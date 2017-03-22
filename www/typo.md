@@ -1,4 +1,4 @@
 ---
 layout: cat_typo
-permalink: /tipography/
+permalink: /typography/
 ---
