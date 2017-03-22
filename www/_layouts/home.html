@@ -7,8 +7,8 @@
 	<div id="wrapper">
 		{% include header.html %}
 		<div class="section">
-<div class="md"> 			<div class="md">{{content}}</div> </div>
-		{% for post in site.posts %}
+			<div class="md">{{content}}</div>
+			{% for post in site.posts %}
 			<article>
 				<a class="th_box" href="{{ post.url | relative_url }}">
 					<div class="thumnail{{post.size}} ">
@@ -22,7 +22,7 @@
 					</div>
 				</a>
 			</article>
-		{% endfor %}
+			{% endfor %}
 		</div>
 		{% include footer.html %}
 	</div>

@@ -186,6 +186,10 @@ a.socicon2{
 	width: 15px;
 	height: 15px;
 }
+a.socicon3{
+	width: 15px;
+	height: 15px;
+}
 
 #socicons{
 	position: absolute;
@@ -257,8 +261,8 @@ a.th_box{
 
 .th_box_in{
 	position: absolute;
-	top: 50px;
-	left: 50px;
+	top: 35px;
+	left: 25px;
 }
 
 a.th_box_in1{
