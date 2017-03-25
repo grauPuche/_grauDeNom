@@ -43,6 +43,10 @@ table {
 	border-spacing: 0;
 }
 
+img{
+	float: left;
+}
+
 /*----------------------main style -------------------------*/
 
 title{content: Grau de nom}
@@ -162,12 +166,16 @@ article{
 }	
 
 #about{
-	font-family: tungsten_book;
 	float: left;
-	font-size: 15px;
 	margin-left: 75px;
 	margin-top: 41px;
+}
+
+a.about{
+	font-family: tungsten_book;
+	font-size: 15px;
     color: #000000;
+	font-weight: normal;
 }
 
 a.socicon1{
@@ -175,6 +183,10 @@ a.socicon1{
 	height: 15px;
 }
 a.socicon2{
+	width: 15px;
+	height: 15px;
+}
+a.socicon3{
 	width: 15px;
 	height: 15px;
 }
@@ -195,6 +207,7 @@ a.category{
     color: #000000;
     text-decoration: none;
     font-weight: 400;
+	font-style: italic;
 }
 
 /*----------------------THUMNAILS----------------------*/
@@ -248,8 +261,8 @@ a.th_box{
 
 .th_box_in{
 	position: absolute;
-	top: 50px;
-	left: 50px;
+	top: 35px;
+	left: 25px;
 }
 
 a.th_box_in1{
@@ -270,15 +283,15 @@ a.th_box_in1{
     font-weight: 400;
 }
 
- /*----------------------BLOG----------------------*/ 
+ /*----------------------POST----------------------*/ 
 
 .blog_sidetext224{
-	font-size: 8pt;
-	line-height: 120%;
+	font-size: 9pt;
+	line-height: 140%;
 	width: 224px;
 	position: absolute;
 	margin-left: 4px;
-    font-style: italic;
+	margin-bottom: 10px;
 }
 
 .proj_date{
@@ -302,6 +315,17 @@ a.th_box_in1{
 	margin-top: 0;
 }
 
+.blog_title512_BIG{
+	font-family: tungsten_semi;
+	font-size: 65pt;
+	line-height: 100%;
+	width: 768px;
+	margin-left: 256px;
+	margin-bottom: 0;
+	margin-top: 9pt;
+	text-align: right;
+}
+
 .blog_text512{
 	width: 512px;
 	margin: auto;
@@ -309,13 +333,24 @@ a.th_box_in1{
 	margin-top: 0;
 }
 
+.pro_img{
+	width: 1024px;
+	margin: auto;
+	margin-bottom: 0; 
+	margin-top: 0;
+	text-align: center;
+}
 
+.md img{
+	text-align: center;
+}
 
 
 /*----------------------FOOTER----------------------*/
 
 #endName{
     font-weight: 700;
+	margin-top: 25px;
 }
 
 .signature{
@@ -330,12 +365,27 @@ a{
     font-weight: 700;
 }
 
+.md a:hover{
+	text-decoration: none;
+    color: #7c7c7c ;
+}
+
+.md a{
+	text-decoration: none;
+    color: #444444;
+    font-weight: 700;
+}
+
+.md img{
+	margin-bottom: 20px;
+}
+
 p{
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
-/*----------------------MARKDOWN----------------------*/
+/*---------------------- MARKDOWN ----------------------*/
 
 
 h1{

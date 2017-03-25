@@ -11,21 +11,18 @@
 				<br>
 				{{page.day}}
 				<div class="proj_date">{{page.city}} {{page.year}}</div>
-		
 				<img class="proj_line" src="{{ 'img/proj/proj_line.png' | relative_url }}">
 				<br>
 				<br>
 				<a class="category" href="{{'/'}}{{page.category}}{{'/'| relative_url }}">{{page.category}}</a><br>
 			</div>
 			<div class="blog_title512">
-
 				<img src="{{ 'img/thumnailsBlog/'| relative_url }}{{page.number}}_1.png">
-
 				#{{page.number}} {{page.title}} <br><br>
 			</div>
 			<div class="blog_text512">
 				<br>
-				{{content}}
+				<div class="md">{{content}}</div>
 					<p id="endName">
 						gP
 					</p>
